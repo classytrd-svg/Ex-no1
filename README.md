@@ -62,11 +62,17 @@ END
 
 #### Manual Calculations
 
-(Add your calculation here)
+1234H + 1234H = 2468H
 
----
+Carry = 00H
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+
+AX = 2468H
+CL = 00H
+1200H → 68H
+1201H → 24H
+1202H → 00H
 
 ## 2. SUBTRACTION
 
@@ -106,21 +112,26 @@ END
 
 
 #### Output Table
-
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
-
+AX = 0000H
+CL = 00H
+2004H → 00H
+2005H → 00H
+2006H → 00H
 #### Manual Calculations
 
-(Add your calculation here)
+1234H - 1234H = 0000H
 
----
+Borrow = 00H
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
 
 ## 3. MULTIPLICATION
+AX = 0000H
+CL = 00H
+2004H → 00H
+2005H → 00H
+2006H → 00H
 
 #### Algorithm
 
@@ -155,15 +166,20 @@ END
 ```
 
 #### Output Table
-
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
+AX = 5A90H
+DX = 014BH
+2004H → 90H
+2005H → 5AH
+2006H → 4BH
+2007H → 01H
 
 #### Manual Calculations
-
-(Add your calculation here)
-
+AX = 5A90H
+DX = 014BH
+2004H → 90H
+2005H → 5AH
+2006H → 4BH
+2007H → 01H
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
@@ -200,18 +216,28 @@ END
 ```
 
 #### Output Table
+| Memory Location | Data  |
+| --------------- | ----- |
+| 2000H           | 34 12 |
+| 2002H           | 34 12 |
+| 2004H           | 01 00 |
+| 2006H           | 00 00 |
 
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
 
 #### Manual Calculations
+1234H ÷ 1234H = 0001H
 
-(Add your calculation here)
+Quotient = 0001H
+Remainder = 0000H
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
-
+AX = 0001H
+DX = 0000H
+2004H → 01H
+2005H → 00H
+2006H → 00H
+2007H → 00H
 
 
 ## RESULT
